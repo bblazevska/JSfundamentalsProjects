@@ -35,9 +35,9 @@
 
 //-------- CHALLENGE #3 -------//
 
-const dolphinsScore1 = 96;
-const dolphinsScore2 = 108;
-const dolphinsScore3 = 89;
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 108;
+// const dolphinsScore3 = 89;
 
 // const koalasScore1 = 88;
 // const koalasScore2 = 91;
@@ -60,9 +60,9 @@ const dolphinsScore3 = 89;
 
 // const koalasScore = (109 + 95 + 123) /3;
 
-// if(dolphinsScore > koalasScore & dolphinsScore >= 100){
+// if(dolphinsScore > koalasScore && dolphinsScore >= 100){
 //    console.log(`Winners are the Dolphins!`);
-// }else if(koalasScore > dolphinsScore & koalasScore >= 100){
+// }else if(koalasScore > dolphinsScore && koalasScore >= 100){
 //    console.log(`winners are the Koalas!`);
 // }else if(dolphinsScore === koalasScore){
 //    console.log(`It's draw! No one won!`);
@@ -70,14 +70,26 @@ const dolphinsScore3 = 89;
 
 
 // BONUS 2
-const dolphinsScore = (97 + 112 + 101) /3;
+// const dolphinsScore = (97 + 112 + 101) /3;
 
-const koalasScore = (109 + 95 + 106) /3;
+// const koalasScore = (109 + 95 + 106) /3;
 
-if(dolphinsScore > koalasScore & dolphinsScore >= 100){
-   console.log(`Winners are the Dolphins!`);
-}else if(koalasScore > dolphinsScore & koalasScore >= 100){
-   console.log(`winners are the Koalas!`);
-}else if(dolphinsScore === koalasScore & dolphinsScore >= 100 & koalasScore >= 100){
-   console.log(`It's draw! No one won!`);
-}
+// if(dolphinsScore > koalasScore && dolphinsScore >= 100){
+//    console.log(`Winners are the Dolphins!`);
+// }else if(koalasScore > dolphinsScore && koalasScore >= 100){
+//    console.log(`winners are the Koalas!`);
+// }else if(dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100){
+//    console.log(`It's draw! No one won!`);
+// } 
+
+
+
+//-------- CHALLENGE #4 -------//
+
+// const bill = 275;
+// const bill = 40;
+const bill = 430;
+
+const tip = bill <=300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip} and the total value ${bill + tip}`);
