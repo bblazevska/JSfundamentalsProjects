@@ -114,3 +114,75 @@
 // if(friends.includes('Steven')){
 //    console.log('You have a friend called Steven.');
 // }
+
+
+
+// ----------- OBJECTS ---------- //
+
+// const bojanaArray = [
+//    'Bojana',
+//    'Kuzeva',
+//    2037-1998,
+//    'developer',
+//    ['Simona','Ana','Martina']
+// ];
+
+// const bojana = {
+//    firstName: 'Bojana',
+//    lastName: 'Kuzeva',
+//    age: 2037 - 1998,
+//    job: 'developer',
+//    friends: ['Simona','Ana','Martina']
+// };
+
+// console.log(bojana);
+
+
+// console.log(bojana.lastName);
+// console.log(bojana['lastName']);
+
+
+// const interestedIn = prompt('What do you want to know abaout Bojana? Choose between firstName, lastName, age, job and friends.');
+
+
+// if(bojana[interestedIn]){
+//    console.log(bojana[interestedIn]);
+// }else{
+//    console.log('Wrong request!Choose between firstName, lastName, age, job and friends.');
+// }
+
+// bojana.location = 'Macedonia';
+// bojana['instagram'] = '@kuzeva_';
+// console.log(bojana);
+
+// //Challenge
+
+// console.log(`${bojana.firstName} has ${bojana.friends.length} friends, and her best friend is ${bojana.friends[0]}`);
+
+
+
+
+//  OBJECTS METHODS
+
+const bojana = {
+      firstName: 'Bojana',
+      lastName: 'Kuzeva',
+      birthYear: 1998,
+      job: 'developer',
+      friends: ['Simona','Ana','Martina'],
+      hasDriversLicence: true,
+
+      // calcAge: function(birthYear){
+      //    return 2037 - birthYear;
+      // }
+      // calcAge: function(){
+      //    return 2037 - this.birthYear;
+      // }
+      calcAge: function(birthYear){
+         this.age = 2037 - birthYear;
+         return this.age;
+      }
+};
+
+console.log(bojana.calcAge());
+// console.log(bojana['calcAge'](bojana.birthYear));
