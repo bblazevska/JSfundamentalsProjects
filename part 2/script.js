@@ -164,13 +164,13 @@
 
 //  OBJECTS METHODS
 
-const bojana = {
-      firstName: 'Bojana',
-      lastName: 'Kuzeva',
-      birthYear: 1998,
-      job: 'developer',
-      friends: ['Simona','Ana','Martina'],
-      hasDriversLicence: true,
+// const bojana = {
+//       firstName: 'Bojana',
+//       lastName: 'Kuzeva',
+//       birthYear: 1998,
+//       job: 'developer',
+//       friends: ['Simona','Ana','Martina'],
+//       hasDriversLicence: true,
 
       // calcAge: function(birthYear){
       //    return 2037 - birthYear;
@@ -178,11 +178,98 @@ const bojana = {
       // calcAge: function(){
       //    return 2037 - this.birthYear;
       // }
-      calcAge: function(birthYear){
-         this.age = 2037 - birthYear;
-         return this.age;
-      }
-};
 
-console.log(bojana.calcAge());
+//       calcAge: function(birthYear){
+//          this.age = 2037 - birthYear;
+//          return this.age;
+//       }
+// };
+
+// console.log(bojana.calcAge());
 // console.log(bojana['calcAge'](bojana.birthYear));
+
+
+//  FOR LOOPS
+
+// for(let rep = 1; rep <= 10; rep++){
+//       console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// const bojana = [
+//       'Bojana',
+//       'Kuzeva',
+//       2037-1998,
+//       'developer',
+//       ['Simona','Ana','Martina']
+// ];
+// const types = [];
+
+// for (let i = 0; i < bojana.length; i++) {
+      // console.log(bojana[i]);
+
+      // types[i] = typeof bojana[i];
+      // types.push(typeof bojana[i]);
+// }
+// console.log(types);
+
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for(let i = 0; i < years.length; i++){
+//       ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+
+// CONTINUE AND BREAK
+// console.log('-----ONLY STRINGS-----');
+// for (let i = 0; i < bojana.length; i++) {
+//       if(typeof bojana[i] !== 'string') continue;
+
+//       console.log(bojana[i], typeof bojana[i]);
+// }
+
+// console.log('---BREAK WITH NUMBER----');
+// for (let i = 0; i < bojana.length; i++) {
+//       if(typeof bojana[i] === 'number') break;
+//       console.log(bojana[i], typeof bojana[i]);
+// }
+
+
+// LOOPING BACKWARDS
+
+// for (let i = bojana.length -1 ; i >= 0; i--) {
+//      console.log(i, bojana[i]);
+      
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+//       console.log(`--- Starting exercise ${exercise} ---`);
+
+//       for(let rep = 1; rep < 6; rep++){
+//             console.log(`Exercise ${exercise}: Lifting weights repetition ${rep}`);
+//       }
+      
+// }
+
+
+/// WHILE LOOP
+
+// for(let rep = 1; rep <= 10; rep++){
+//       console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// let rep1 = 1;
+// while(rep1 <= 10){
+//       console.log(`Lifting weights repetition ${rep1}`);
+//       rep1++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+// while(dice !== 6){
+//       console.log(`You rolled a ${dice}`);
+//       dice = Math.trunc(Math.random() * 6) + 1;
+//       if(dice === 6) console.log('Loop is about to end..');
+// }
